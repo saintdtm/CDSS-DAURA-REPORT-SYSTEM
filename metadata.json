@@ -1,0 +1,5 @@
+{
+  "name": "CDSS Daura Digital Report Card System",
+  "description": "A comprehensive, role-based academic record management system for Command Day Secondary School Daura, featuring secure grade entry, administrative controls, and automated PDF report card generation.",
+  "requestFramePermissions": []
+}
