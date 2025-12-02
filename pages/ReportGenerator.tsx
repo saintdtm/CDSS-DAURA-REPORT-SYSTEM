@@ -15,6 +15,7 @@ export const ReportGenerator: React.FC<Props> = ({ user }) => {
     
   const [selectedClass, setSelectedClass] = useState(initialClass);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [logoImage, setLogoImage] = useState<any>(null);   // 
 
   // Helper to calculate Grade
   const calculateGrade = (total: number) => {
@@ -273,7 +274,7 @@ export const ReportGenerator: React.FC<Props> = ({ user }) => {
       }
 
       // Save and Download
-      const pdfBytes = await pdfDoc.save();
+     const pdfBytes = await pdfDoc.save();
       const blob = new Blob([pdfBytes], { type: 'application/pdf' });
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
